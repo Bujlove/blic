@@ -10,41 +10,27 @@ body {
     height: 100vh;
 }
 
-/* Frame 24 */
-.frame-24 {
-    position: relative;
-    width: 473px;
-    height: 278px;
+/* Контейнер */
+.container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 10px;
+    position: relative;
+    width: 473px; /* Ширина из макета */
+    height: 278px; /* Высота из макета */
 }
 
-/* Frame 23 */
-.frame-23 {
+/* Ряд кнопок */
+.row {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 10px;
-    width: 473px;
-    height: 134px;
-}
-
-/* Frame 22 */
-.frame-22 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    width: 473px;
-    height: 134px;
 }
 
 /* Кнопки */
 .button {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end; /* Выравнивание текста по нижнему краю */
     padding: 10px;
     border-radius: 20px;
     color: #FFFFFF;
@@ -53,6 +39,7 @@ body {
     line-height: 19px;
     justify-content: flex-start;
     position: relative;
+    overflow: hidden; /* Чтобы текст не выходил за пределы */
 }
 
 /* Зеленая кнопка */
@@ -81,4 +68,11 @@ body {
     width: 303px;
     height: 134px;
     background: #FF850F;
+}
+
+/* Текст внутри кнопок */
+.button span {
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
