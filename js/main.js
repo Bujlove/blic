@@ -2,19 +2,22 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Interactive Buttons Loaded!");
 
-    // Обработчики событий для кнопок
+    // Обработчик для зеленой кнопки
     document.getElementById("button1").addEventListener("click", () => {
-        alert("У меня проблемы на работе!");
+        window.location.href = "https://example.com"; // Замените ссылку на нужный URL
     });
 
+    // Обработчик для второй кнопки
     document.getElementById("button2").addEventListener("click", () => {
         alert("Меня уволили!");
     });
 
+    // Обработчик для третьей кнопки
     document.getElementById("button3").addEventListener("click", () => {
         alert("Хочу уволиться!");
     });
 
+    // Обработчик для четвертой кнопки
     document.getElementById("button4").addEventListener("click", () => {
         alert("Меня пытаются уволить!");
     });
