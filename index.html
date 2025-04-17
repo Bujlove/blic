@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Buttons</title>
+    <title>Interactive Buttons with Popup</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- Зеленая кнопка -->
+        <!-- Кнопки -->
         <button class="rectangle green" id="button1"></button>
-        
-        <!-- Оранжевая кнопка -->
         <button class="rectangle orange" id="button2"></button>
-        
-        <!-- Голубая кнопка -->
         <button class="rectangle blue" id="button3"></button>
-        
-        <!-- Желтая кнопка -->
         <button class="rectangle yellow" id="button4"></button>
+    </div>
+
+    <!-- Попап -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <p>Перейти по ссылке?</p>
+            <a href="https://example.com" target="_blank" class="popup-button">Перейти</a>
+            <button class="popup-close" id="popupClose">Закрыть</button>
+        </div>
     </div>
 
     <script src="js/main.js"></script>
