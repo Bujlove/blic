@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Buttons with Popup</title>
+    <title>Детальная работа</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <!-- Кнопки -->
-        <button class="rectangle green" id="button1"></button>
-        <button class="rectangle orange" id="button2"></button>
-        <button class="rectangle blue" id="button3"></button>
-        <button class="rectangle yellow" id="button4"></button>
-    </div>
+        <!-- Первый блок -->
+        <div class="frame">
+            <div class="button green">
+                <span class="button-text">У меня проблемы на работе</span>
+            </div>
+            <div class="button red">
+                <span class="button-text">Меня уволили</span>
+            </div>
+        </div>
 
-    <!-- Попап -->
-    <div id="popup" class="popup hidden">
-        <div class="popup-content">
-            <p>Перейти по ссылке?</p>
-            <a href="https://example.com" target="_blank" class="popup-button">Перейти</a>
-            <button class="popup-close" id="popupClose">Закрыть</button>
+        <!-- Второй блок -->
+        <div class="frame">
+            <div class="button blue">
+                <span class="button-text">Хочу уволиться</span>
+            </div>
+            <div class="button orange">
+                <span class="button-text">Меня пытаются уволить</span>
+            </div>
         </div>
     </div>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
