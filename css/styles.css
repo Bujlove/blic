@@ -14,13 +14,21 @@
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 10px;
 }
 
 /* Анимация при наведении */
 .rectangle:hover {
-    transform: scale(1.05);
+    filter: brightness(85%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rectangle:active {
+    transform: scale(0.95);
 }
 
 /* Зеленая кнопка */
@@ -57,4 +65,17 @@
     left: 643px;
     top: 646px;
     background: #FF850F;
+}
+
+/* Стиль текста на кнопках */
+.button-text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
