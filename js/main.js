@@ -8,25 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById("button2").addEventListener("click", () => {
-        alert("Меня уволили!");
+        const popup = document.getElementById('popup');
+        popup.style.display = 'flex'; // Показать попап
     });
 
     document.getElementById("button3").addEventListener("click", () => {
         alert("Хочу уволиться!");
     });
 
-    // document.getElementById("button4").addEventListener("click", () => {
-    //    alert("Меня пытаются уволить!");
+    document.getElementById("button4").addEventListener("click", () => {
+        alert("Меня пытаются уволить!");
     });
-    document.addEventListener('DOMContentLoaded', () => {
-    const orangeButton = document.getElementById('button2');
+
+    // Логика для работы с попапом
     const popup = document.getElementById('popup');
     const closePopup = document.getElementById('closePopup');
-
-    // Открытие попапа по нажатию на оранжевую кнопку
-    orangeButton.addEventListener('click', () => {
-        popup.style.display = 'flex';
-    });
 
     // Закрытие попапа по нажатию на крестик
     closePopup.addEventListener('click', () => {
@@ -39,5 +35,4 @@ document.addEventListener("DOMContentLoaded", () => {
             popup.style.display = 'none';
         }
     });
-});
 });
