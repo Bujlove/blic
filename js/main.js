@@ -18,4 +18,26 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("button4").addEventListener("click", () => {
         alert("Меня пытаются уволить!");
     });
+    document.addEventListener('DOMContentLoaded', () => {
+    const orangeButton = document.getElementById('button2');
+    const popup = document.getElementById('popup');
+    const closePopup = document.getElementById('closePopup');
+
+    // Открытие попапа по нажатию на оранжевую кнопку
+    orangeButton.addEventListener('click', () => {
+        popup.style.display = 'flex';
+    });
+
+    // Закрытие попапа по нажатию на крестик
+    closePopup.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    // Закрытие попапа при клике вне его содержимого
+    popup.addEventListener('click', (event) => {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
 });
