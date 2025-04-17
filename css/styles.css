@@ -16,8 +16,8 @@ body {
     flex-direction: column;
     gap: 10px;
     position: relative;
-    width: 473px; /* Ширина из макета */
-    height: 278px; /* Высота из макета */
+    width: 473px;
+    height: 278px;
 }
 
 /* Ряды кнопок */
