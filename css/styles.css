@@ -10,60 +10,78 @@ body {
     min-height: 100vh;
 }
 
-/* Контейнер */
+/* Контейнер (Frame 24) */
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    position: relative;
+    width: 1466px;
+    height: 1272px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
-    width: 90%;
-    max-width: 600px;
+    padding: 0;
+    left: calc(50% - 1466px / 2);
 }
 
-/* Общий стиль для кнопок */
+/* Frame 23 и Frame 22 (строки) */
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 473px;
+    height: 134px;
+}
+
+/* Кнопки */
 .button {
     display: flex;
+    flex-direction: row;
     align-items: flex-end;
-    justify-content: flex-start;
     padding: 10px;
+    gap: 10px;
     border-radius: 20px;
+    height: 134px;
     position: relative;
-    height: 100px;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Текст кнопок */
+/* Текст на кнопках */
 .button-text {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
+    line-height: 19px;
     color: #FFFFFF;
+    margin: 0;
     position: absolute;
     bottom: 10px;
     left: 10px;
 }
 
-/* Зеленая кнопка */
+/* Зеленая кнопка (Frame 20) */
 .button.green {
+    width: 292px;
     background: #15AB59;
-    grid-column: span 2; /* Занимает 2 колонки */
-    height: 120px;
 }
 
-/* Красная кнопка */
+/* Красная кнопка (Frame 21) */
 .button.red {
+    width: 171px;
     background: #F64900;
 }
 
-/* Голубая кнопка */
+/* Голубая кнопка (Frame 18) */
 .button.blue {
+    width: 160px;
     background: #7CC9FC;
 }
 
-/* Оранжевая кнопка */
+/* Оранжевая кнопка (Frame 19) */
 .button.orange {
+    width: 303px;
     background: #FF850F;
-    grid-column: span 2; /* Занимает 2 колонки */
-    height: 120px;
 }
 
 /* Анимация при наведении */
@@ -81,12 +99,17 @@ body {
 /* Адаптивная верстка */
 @media (max-width: 768px) {
     .container {
-        grid-template-columns: 1fr; /* Все кнопки в один столбец */
+        width: 100%;
+        padding: 20px;
+        align-items: center;
     }
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+
     .button {
-        height: 100px;
-    }
-    .button.green, .button.orange {
-        grid-column: span 1; /* Убираем растяжение на моб. */
+        width: 100%;
     }
 }
