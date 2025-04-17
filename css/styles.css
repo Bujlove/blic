@@ -4,19 +4,21 @@ body {
     margin: 0;
     padding: 0;
     background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* Контейнер */
 .container {
-    position: relative;
-    width: 1466px;
-    height: 1272px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    width: 100%;
+    max-width: 1466px;
 }
 
 /* Общий стиль для фреймов */
@@ -26,6 +28,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    width: 100%;
 }
 
 /* Общий стиль для кнопок */
@@ -37,8 +40,6 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
-    width: auto;
-    min-width: 150px;
     height: 134px;
 }
 
@@ -54,21 +55,25 @@ body {
 /* Зеленая кнопка */
 .button.green {
     background: #15AB59;
+    width: 292px;
 }
 
 /* Красная кнопка */
 .button.red {
     background: #F64900;
+    width: 171px;
 }
 
 /* Голубая кнопка */
 .button.blue {
     background: #7CC9FC;
+    width: 160px;
 }
 
 /* Оранжевая кнопка */
 .button.orange {
     background: #FF850F;
+    width: 303px;
 }
 
 /* Анимация при наведении */
@@ -86,8 +91,6 @@ body {
 /* Адаптивная верстка */
 @media (max-width: 768px) {
     .container {
-        width: 100%;
-        height: auto;
         padding: 1rem;
     }
 
