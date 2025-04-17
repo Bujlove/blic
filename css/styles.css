@@ -19,8 +19,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    left: calc(50% - 473px / 2 + 0.5px);
-    top: 497px;
 }
 
 /* Frame 23 */
@@ -43,62 +41,44 @@ body {
     height: 134px;
 }
 
-/* Frame 20 */
-.frame-20 {
+/* Кнопки */
+.button {
     display: flex;
     align-items: flex-end;
     padding: 10px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    justify-content: flex-start;
+    position: relative;
+}
+
+/* Зеленая кнопка */
+.button.green {
     width: 292px;
     height: 134px;
     background: #15AB59;
-    border-radius: 20px;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
 }
 
-/* Frame 21 */
-.frame-21 {
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
+/* Красная кнопка */
+.button.red {
     width: 171px;
     height: 134px;
     background: #F64900;
-    border-radius: 20px;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
 }
 
-/* Frame 18 */
-.frame-18 {
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
+/* Голубая кнопка */
+.button.blue {
     width: 160px;
     height: 134px;
     background: #7CC9FC;
-    border-radius: 20px;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
 }
 
-/* Frame 19 */
-.frame-19 {
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
+/* Оранжевая кнопка */
+.button.orange {
     width: 303px;
     height: 134px;
     background: #FF850F;
-    border-radius: 20px;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
 }
