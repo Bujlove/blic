@@ -1,21 +1,26 @@
-// JavaScript для работы с кнопками
+// JavaScript для работы с кнопками и попапом
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Interactive Buttons Loaded!");
+    console.log("Interactive Buttons with Popup Loaded!");
 
-    // Обработчики событий для кнопок
-    document.getElementById("button1").addEventListener("click", () => {
-        alert("Green button clicked!");
+    // Элементы
+    const popup = document.getElementById("popup");
+    const popupClose = document.getElementById("popupClose");
+    const button2 = document.getElementById("button2");
+
+    // Открытие попапа при нажатии на красную кнопку
+    button2.addEventListener("click", () => {
+        popup.classList.remove("hidden");
     });
 
-    document.getElementById("button2").addEventListener("click", () => {
-        alert("Orange button clicked!");
+    // Закрытие попапа
+    popupClose.addEventListener("click", () => {
+        popup.classList.add("hidden");
     });
 
-    document.getElementById("button3").addEventListener("click", () => {
-        alert("Blue button clicked!");
-    });
-
-    document.getElementById("button4").addEventListener("click", () => {
-        alert("Yellow button clicked!");
+    // Закрытие попапа при клике вне его области
+    popup.addEventListener("click", (event) => {
+        if (event.target === popup) {
+            popup.classList.add("hidden");
+        }
     });
 });
