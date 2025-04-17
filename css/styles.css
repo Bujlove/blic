@@ -1,3 +1,56 @@
+/* Уменьшение высоты страницы и центрирование */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Высота страницы равна высоте окна браузера */
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Главный контейнер */
+.element {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.element .frame-wrapper {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1272px;
+}
+
+.element .frame {
+    flex-direction: column;
+    width: 473px;
+    align-items: flex-start;
+    top: 0; /* Убрано смещение сверху */
+    left: 0; /* Убрано смещение слева */
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.element .div-wrapper,
+.element .frame-2,
+.element .frame-3,
+.element .frame-4 {
+    align-items: flex-end;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
 /* Общий контейнер */
 .container {
     position: relative;
