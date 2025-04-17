@@ -29,3 +29,30 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Стили для кнопок */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
