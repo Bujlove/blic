@@ -1,84 +1,60 @@
-/* Общие стили */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    background: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Контейнер для всех кнопок */
+/* Общий контейнер */
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     position: relative;
-    width: 473px;
-    height: 278px;
-}
-
-/* Ряды кнопок */
-.row {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+    width: 1440px;
+    height: 1272px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    padding: 0;
 }
 
 /* Общий стиль для кнопок */
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+.rectangle {
+    position: absolute;
     border-radius: 20px;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
+    border: none;
     cursor: pointer;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Анимация при наведении */
+.rectangle:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Зеленая кнопка */
-.button.green {
+.rectangle.green {
     width: 292px;
     height: 134px;
+    left: 483px;
+    top: 502px;
     background: #15AB59;
 }
 
-/* Красная кнопка */
-.button.red {
+/* Оранжевая кнопка */
+.rectangle.orange {
     width: 171px;
     height: 134px;
+    left: 785px;
+    top: 502px;
     background: #F64900;
 }
 
 /* Голубая кнопка */
-.button.blue {
-    width: 160px;
+.rectangle.blue {
+    width: 150px;
     height: 134px;
+    left: 483px;
+    top: 646px;
     background: #7CC9FC;
 }
 
-/* Оранжевая кнопка */
-.button.orange {
-    width: 303px;
+/* Желтая кнопка */
+.rectangle.yellow {
+    width: 313px;
     height: 134px;
+    left: 643px;
+    top: 646px;
     background: #FF850F;
-}
-
-/* Эффекты наведения и нажатия */
-.button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-.button:active {
-    transform: scale(0.95);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
