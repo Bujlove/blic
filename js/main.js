@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Хочу уволиться!");
     });
 
-    document.getElementById("button4").addEventListener("click", () => {
-        alert("Меня пытаются уволить!");
+    // document.getElementById("button4").addEventListener("click", () => {
+    //    alert("Меня пытаются уволить!");
     });
     document.addEventListener('DOMContentLoaded', () => {
     const orangeButton = document.getElementById('button2');
