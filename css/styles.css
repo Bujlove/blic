@@ -14,13 +14,20 @@
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
 }
 
-/* Анимация при наведении */
+/* Затемнение при наведении */
 .rectangle:hover {
-    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Эффект нажатия */
+.rectangle:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Зеленая кнопка */
@@ -59,23 +66,62 @@
     background: #FF850F;
 }
 
-/* Адаптивная верстка */
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-    }
+/* Стили для попапа */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
-    .rectangle {
-        position: static; /* Убираем абсолютное позиционирование */
-        margin-bottom: 1rem; /* Отступ между кнопками */
-        width: 80%; /* Кнопки занимают 80% ширины контейнера */
-        max-width: 300px; /* Ограничиваем максимальную ширину кнопок */
-        height: auto; /* Высота кнопок автоматически подстраивается */
-    }
+.popup.hidden {
+    display: none;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background: #15AB59;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.popup-button:hover {
+    background: #128a47;
+}
+
+.popup-close {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: #F64900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.popup-close:hover {
+    background: #d53d00;
 }
