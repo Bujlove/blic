@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Обработчик для зеленой кнопки
     document.getElementById("button1").addEventListener("click", () => {
-        window.location.href = "https://example.com"; // Замените ссылку на нужный URL
+        window.location.href = "https://t.me/+O5kPFXq94wVhZjEy"; // Замените ссылку на нужный URL
     });
 
     // Обработчик для второй кнопки
