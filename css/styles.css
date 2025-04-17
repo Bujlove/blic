@@ -32,7 +32,7 @@
 }
 
 /* Зеленая кнопка */
-.rectangle.green {
+.div-wrapper {
     width: 292px;
     height: 134px;
     left: 483px;
@@ -41,7 +41,7 @@
 }
 
 /* Оранжевая кнопка */
-.rectangle.orange {
+.frame-2 {
     width: 171px;
     height: 134px;
     left: 785px;
@@ -50,7 +50,7 @@
 }
 
 /* Голубая кнопка */
-.rectangle.blue {
+.frame-3 {
     width: 150px;
     height: 134px;
     left: 483px;
@@ -59,7 +59,7 @@
 }
 
 /* Желтая кнопка */
-.rectangle.yellow {
+.frame-4 {
     width: 313px;
     height: 134px;
     left: 643px;
