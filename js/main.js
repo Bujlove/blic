@@ -1,21 +1,21 @@
 // JavaScript для работы с кнопками
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Blicy Project loaded successfully!");
+    console.log("Interactive Buttons Loaded!");
 
-    // Пример обработчиков событий для кнопок
-    document.getElementById("btn1").addEventListener("click", () => {
-        alert("Button 1 clicked!");
+    // Обработчики событий для кнопок
+    document.getElementById("button1").addEventListener("click", () => {
+        alert("Green button clicked!");
     });
 
-    document.getElementById("btn2").addEventListener("click", () => {
-        alert("Button 2 clicked!");
+    document.getElementById("button2").addEventListener("click", () => {
+        alert("Orange button clicked!");
     });
 
-    document.getElementById("btn3").addEventListener("click", () => {
-        alert("Button 3 clicked!");
+    document.getElementById("button3").addEventListener("click", () => {
+        alert("Blue button clicked!");
     });
 
-    document.getElementById("btn4").addEventListener("click", () => {
-        alert("Button 4 clicked!");
+    document.getElementById("button4").addEventListener("click", () => {
+        alert("Yellow button clicked!");
     });
 });
