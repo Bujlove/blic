@@ -4,18 +4,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Обработчики событий для кнопок
     document.getElementById("button1").addEventListener("click", () => {
-        alert("Green button clicked!");
+        alert("У меня проблемы на работе!");
     });
 
     document.getElementById("button2").addEventListener("click", () => {
-        alert("Orange button clicked!");
+        alert("Меня уволили!");
     });
 
     document.getElementById("button3").addEventListener("click", () => {
-        alert("Blue button clicked!");
+        alert("Хочу уволиться!");
     });
 
     document.getElementById("button4").addEventListener("click", () => {
-        alert("Yellow button clicked!");
+        alert("Меня пытаются уволить!");
     });
 });
