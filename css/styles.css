@@ -58,3 +58,24 @@
     top: 646px;
     background: #FF850F;
 }
+
+/* Адаптивная верстка */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .rectangle {
+        position: static; /* Убираем абсолютное позиционирование */
+        margin-bottom: 1rem; /* Отступ между кнопками */
+        width: 80%; /* Кнопки занимают 80% ширины контейнера */
+        max-width: 300px; /* Ограничиваем максимальную ширину кнопок */
+        height: auto; /* Высота кнопок автоматически подстраивается */
+    }
+}
